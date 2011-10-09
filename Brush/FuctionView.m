@@ -34,16 +34,15 @@
 
 + (UIView *)penViewDelegate:(id)delegate  selector:(SEL)selector{
 	UIView *viewHolder = [[[UIView alloc] initWithFrame:CGRectMake(40.0f, 120.0f, 240.0f, 200.0f)] autorelease];
-	viewHolder.backgroundColor = [UIColor blackColor];
+	viewHolder.backgroundColor = holderColor;
 	viewHolder.layer.cornerRadius = 5.0f;
     viewHolder.layer.masksToBounds = YES;
 	viewHolder.tag = ColorView;
-	viewHolder.alpha = 0.7f;
 	
 	[viewHolder addSubview:[Button closeButtonWithTarget:delegate]];
 	
 	float x = 10.0f;
-	float y = 10.0f;
+	float y = 15.0f;
 	
 	NSArray *widthArray = [FuctionView allWidthsArray];
 	for (NSString *width in widthArray) {
@@ -57,7 +56,7 @@
 	}
 	
 	x = 15.0f;
-	y = 50.0f;
+	y = 55.0f;
 	
 	NSArray *colorArray = [FuctionView allColorsArray];
 	for (UIColor *color in colorArray) {
@@ -80,17 +79,16 @@
 }
 
 + (UIView *)filterViewDelegate:(id)delegate  selector:(SEL)selector {
-	UIView *viewHolder = [[[UIView alloc] initWithFrame:CGRectMake(35.0f, 125.0f, 250.0f, 170.0f)] autorelease];
-	viewHolder.backgroundColor = [UIColor blackColor];
+	UIView *viewHolder = [[[UIView alloc] initWithFrame:CGRectMake(35.0f, 120.0f, 250.0f, 180.0f)] autorelease];
+	viewHolder.backgroundColor = holderColor;
 	viewHolder.layer.cornerRadius = 5.0f;
     viewHolder.layer.masksToBounds = YES;
 	viewHolder.tag = FilterView;
-	viewHolder.alpha = 0.7f;
 	
 	[viewHolder addSubview:[Button closeButtonWithTarget:delegate]];
 	
 	float x = 10.0f;
-	float y = 10.0f;
+	float y = 15.0f;
 	
 	NSArray *widthArray = [FuctionView allFiltersArray];
 	for (NSString *obj in widthArray) {
@@ -111,44 +109,16 @@
 	return viewHolder;
 }
 
-+ (UIView *)lineWidthViewDelegate:(id)delegate  selector:(SEL)selector{
-	UIView *viewHolder = [[[UIView alloc] initWithFrame:CGRectMake(60.0f, 185.0f, 200.0f, 50.0f)] autorelease];
-	viewHolder.backgroundColor = [UIColor blackColor];
-	viewHolder.layer.cornerRadius = 5.0f;
-    viewHolder.layer.masksToBounds = YES;
-	viewHolder.tag = WidthView;
-	viewHolder.alpha = 0.7f;
-	
-	NSArray *widthArray = [FuctionView allWidthsArray];
-	
-	float x = 5.0f;
-	float y = 10.0f;
-	
-	for (NSString *width in widthArray) {
-		[viewHolder addSubview:[Button widthButtonWithTarget:delegate 
-													selector:selector
-													   frame:CGRectMake(x, y, 30.0f, 30.0f) 
-													   title:[NSString stringWithFormat:@"%@px",width]
-														 tag:[widthArray indexOfObject:width]]];
-		x += 40.0f;
-		
-	}
-	
-	return viewHolder;
-}
-
-
 + (UIView *)backImageViewDelegate:(id)delegate  selector:(SEL)selector {
-	UIView *viewHolder = [[[UIView alloc] initWithFrame:CGRectMake(7.5f, 0.0f, 305.0f, 420.0f)] autorelease];
-	viewHolder.backgroundColor = [UIColor whiteColor];
+	UIView *viewHolder = [[[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 420.0f)] autorelease];
+	viewHolder.backgroundColor = holderColor;
 	viewHolder.layer.cornerRadius = 5.0f;
     viewHolder.layer.masksToBounds = YES;
 	viewHolder.tag = BackImageView;
-	viewHolder.alpha = 0.7f;
 	
 	[viewHolder addSubview:[Button closeButtonWithTarget:delegate]];
 	
-	float x = 5.0f;
+	float x = 12.5f;
 	float y = 0.0f;
 	
 	NSArray *imagesArray = [FuctionView allBackImagesArray];
@@ -161,8 +131,8 @@
 		
 		x += 75.0f;
 		
-		if (x > 230.0f) {
-			x = 5.0f;
+		if (x > 260.0f) {
+			x = 12.5f;
 			y += 105.0f;
 		}
 		
@@ -171,28 +141,13 @@
 	return viewHolder;
 }
 
-+ (NSArray *)allColorsArray{//16
++ (NSArray *)allColorsArray{//15
 	return [NSArray arrayWithObjects:
-			RGB(255,0,0), 
-			RGB(0,255,0), 
-			RGB(0,0,255), 
+			RGB(255,255,255), RGB(255,153,170), RGB(250,235,163), RGB(147,235,137), RGB(184,244,255),
 			
-			RGB(255,255,0), 
-			RGB(255,0,255), 
-			RGB(0,255,255), 
+			RGB(119,119,119), RGB(32,248,86), RGB(250,192,0), RGB(255,0,0), RGB(0,184,230),
 			
-			RGB(155,0,0), 
-			RGB(0,155,0), 
-			RGB(0,0,155),  
-			
-			RGB(255,255,100), 
-			RGB(255,100,255), 
-			RGB(100,255,255), 
-			
-			RGB(70,120,180), 
-			RGB(120,180,70), 
-			
-			RGB(0,0,0),
+			RGB(0,0,0), RGB(199,156,70), RGB(0,179,89), RGB(12,45,117), RGB(102,14,14),
 			
 			 nil];
 }

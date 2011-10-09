@@ -57,6 +57,9 @@
 {	
 	UIButton *button = [[[UIButton alloc] initWithFrame:frame] autorelease] ;
 	
+	button.layer.cornerRadius = 5.0f;
+    button.layer.masksToBounds = YES;
+	
 	[button setTitle:title forState:UIControlStateNormal];	
 	
 	[button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];

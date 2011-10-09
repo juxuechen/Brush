@@ -18,5 +18,6 @@
 #define CloseButton 500
 
 #define BackgroundColor [UIColor colorWithRed:253.0f/255.0f green:172.0f/255.0f blue:246.0f/255.0f alpha:1]
+#define holderColor [UIColor colorWithRed:230./255 green:230./255 blue:230./255 alpha:1]
 
 #endif
