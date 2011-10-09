@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		86A88E421441396D00380CD5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A88E411441396D00380CD5 /* UIKit.framework */; };
+		86A88E441441396D00380CD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A88E431441396D00380CD5 /* Foundation.framework */; };
+		86A88E461441396D00380CD5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A88E451441396D00380CD5 /* CoreGraphics.framework */; };
+		86A88E4C1441396D00380CD5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E4A1441396D00380CD5 /* InfoPlist.strings */; };
+		86A88E4E1441396D00380CD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A88E4D1441396D00380CD5 /* main.m */; };
+		86A88E521441396D00380CD5 /* BrushAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A88E511441396D00380CD5 /* BrushAppDelegate.m */; };
+		86A88E5A1441396D00380CD5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A88E591441396D00380CD5 /* SenTestingKit.framework */; };
+		86A88E5B1441396D00380CD5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A88E411441396D00380CD5 /* UIKit.framework */; };
+		86A88E5C1441396D00380CD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A88E431441396D00380CD5 /* Foundation.framework */; };
+		86A88E5D1441396D00380CD5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A88E451441396D00380CD5 /* CoreGraphics.framework */; };
+		86A88E81144139C400380CD5 /* FuctionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A88E72144139C400380CD5 /* FuctionView.m */; };
+		86A88E82144139C400380CD5 /* ImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A88E74144139C400380CD5 /* ImageUtil.m */; };
+		86A88E83144139C400380CD5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A88E76144139C400380CD5 /* MainViewController.m */; };
+		86A88E84144139C400380CD5 /* PainterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A88E78144139C400380CD5 /* PainterView.m */; };
+		86A88E85144139C400380CD5 /* SoundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A88E7A144139C400380CD5 /* SoundEffect.m */; };
+		86A88E86144139C400380CD5 /* Squiggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A88E7C144139C400380CD5 /* Squiggle.m */; };
+		86A88E87144139C400380CD5 /* UIButton+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A88E7E144139C400380CD5 /* UIButton+Addition.m */; };
+		86A88E88144139C400380CD5 /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A88E80144139C400380CD5 /* UIImage+Addition.m */; };
+		86A88EAA144139CF00380CD5 /* back1.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E8B144139CF00380CD5 /* back1.png */; };
+		86A88EAB144139CF00380CD5 /* back10.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E8C144139CF00380CD5 /* back10.png */; };
+		86A88EAC144139CF00380CD5 /* back11.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E8D144139CF00380CD5 /* back11.png */; };
+		86A88EAD144139CF00380CD5 /* back12.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E8E144139CF00380CD5 /* back12.png */; };
+		86A88EAE144139CF00380CD5 /* back13.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E8F144139CF00380CD5 /* back13.png */; };
+		86A88EAF144139CF00380CD5 /* back14.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E90144139CF00380CD5 /* back14.png */; };
+		86A88EB0144139CF00380CD5 /* back15.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E91144139CF00380CD5 /* back15.png */; };
+		86A88EB1144139CF00380CD5 /* back16.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E92144139CF00380CD5 /* back16.png */; };
+		86A88EB2144139CF00380CD5 /* back2.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E93144139CF00380CD5 /* back2.png */; };
+		86A88EB3144139CF00380CD5 /* back3.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E94144139CF00380CD5 /* back3.png */; };
+		86A88EB4144139CF00380CD5 /* back4.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E95144139CF00380CD5 /* back4.png */; };
+		86A88EB5144139CF00380CD5 /* back5.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E96144139CF00380CD5 /* back5.png */; };
+		86A88EB6144139CF00380CD5 /* back6.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E97144139CF00380CD5 /* back6.png */; };
+		86A88EB7144139CF00380CD5 /* back7.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E98144139CF00380CD5 /* back7.png */; };
+		86A88EB8144139CF00380CD5 /* back8.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E99144139CF00380CD5 /* back8.png */; };
+		86A88EB9144139CF00380CD5 /* back9.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E9A144139CF00380CD5 /* back9.png */; };
+		86A88EBA144139CF00380CD5 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E9B144139CF00380CD5 /* camera.png */; };
+		86A88EBB144139CF00380CD5 /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E9C144139CF00380CD5 /* clear.png */; };
+		86A88EBC144139CF00380CD5 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E9D144139CF00380CD5 /* close.png */; };
+		86A88EBD144139CF00380CD5 /* color.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E9E144139CF00380CD5 /* color.png */; };
+		86A88EBE144139CF00380CD5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88E9F144139CF00380CD5 /* Default.png */; };
+		86A88EBF144139CF00380CD5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88EA0144139CF00380CD5 /* Default@2x.png */; };
+		86A88EC0144139CF00380CD5 /* filter.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88EA1144139CF00380CD5 /* filter.png */; };
+		86A88EC1144139CF00380CD5 /* head.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88EA2144139CF00380CD5 /* head.png */; };
+		86A88EC2144139CF00380CD5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88EA3144139CF00380CD5 /* icon.png */; };
+		86A88EC3144139CF00380CD5 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88EA4144139CF00380CD5 /* icon@2x.png */; };
+		86A88EC4144139CF00380CD5 /* pen.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88EA5144139CF00380CD5 /* pen.png */; };
+		86A88EC5144139D000380CD5 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88EA6144139CF00380CD5 /* phone.png */; };
+		86A88EC6144139D000380CD5 /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88EA7144139CF00380CD5 /* save.png */; };
+		86A88EC7144139D000380CD5 /* Select.caf in Resources */ = {isa = PBXBuildFile; fileRef = 86A88EA8144139CF00380CD5 /* Select.caf */; };
+		86A88EC8144139D000380CD5 /* width.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A88EA9144139CF00380CD5 /* width.png */; };
+		86A88ECB14413E7800380CD5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A88ECA14413E7800380CD5 /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86A88E5E1441396D00380CD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86A88E341441396D00380CD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86A88E3C1441396D00380CD5;
+			remoteInfo = Brush;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		86A88E3D1441396D00380CD5 /* Brush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brush.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86A88E411441396D00380CD5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		86A88E431441396D00380CD5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		86A88E451441396D00380CD5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		86A88E491441396D00380CD5 /* Brush-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Brush-Info.plist"; sourceTree = "<group>"; };
+		86A88E4B1441396D00380CD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		86A88E4D1441396D00380CD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86A88E4F1441396D00380CD5 /* Brush-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Brush-Prefix.pch"; sourceTree = "<group>"; };
+		86A88E501441396D00380CD5 /* BrushAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrushAppDelegate.h; sourceTree = "<group>"; };
+		86A88E511441396D00380CD5 /* BrushAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrushAppDelegate.m; sourceTree = "<group>"; };
+		86A88E581441396D00380CD5 /* BrushTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrushTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86A88E591441396D00380CD5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		86A88E71144139C400380CD5 /* FuctionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuctionView.h; sourceTree = "<group>"; };
+		86A88E72144139C400380CD5 /* FuctionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuctionView.m; sourceTree = "<group>"; };
+		86A88E73144139C400380CD5 /* ImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtil.h; sourceTree = "<group>"; };
+		86A88E74144139C400380CD5 /* ImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtil.m; sourceTree = "<group>"; };
+		86A88E75144139C400380CD5 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		86A88E76144139C400380CD5 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		86A88E77144139C400380CD5 /* PainterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PainterView.h; sourceTree = "<group>"; };
+		86A88E78144139C400380CD5 /* PainterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PainterView.m; sourceTree = "<group>"; };
+		86A88E79144139C400380CD5 /* SoundEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundEffect.h; sourceTree = "<group>"; };
+		86A88E7A144139C400380CD5 /* SoundEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundEffect.m; sourceTree = "<group>"; };
+		86A88E7B144139C400380CD5 /* Squiggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Squiggle.h; sourceTree = "<group>"; };
+		86A88E7C144139C400380CD5 /* Squiggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Squiggle.m; sourceTree = "<group>"; };
+		86A88E7D144139C400380CD5 /* UIButton+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Addition.h"; sourceTree = "<group>"; };
+		86A88E7E144139C400380CD5 /* UIButton+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Addition.m"; sourceTree = "<group>"; };
+		86A88E7F144139C400380CD5 /* UIImage+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addition.h"; sourceTree = "<group>"; };
+		86A88E80144139C400380CD5 /* UIImage+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addition.m"; sourceTree = "<group>"; };
+		86A88E8B144139CF00380CD5 /* back1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back1.png; sourceTree = "<group>"; };
+		86A88E8C144139CF00380CD5 /* back10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back10.png; sourceTree = "<group>"; };
+		86A88E8D144139CF00380CD5 /* back11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back11.png; sourceTree = "<group>"; };
+		86A88E8E144139CF00380CD5 /* back12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back12.png; sourceTree = "<group>"; };
+		86A88E8F144139CF00380CD5 /* back13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back13.png; sourceTree = "<group>"; };
+		86A88E90144139CF00380CD5 /* back14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back14.png; sourceTree = "<group>"; };
+		86A88E91144139CF00380CD5 /* back15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back15.png; sourceTree = "<group>"; };
+		86A88E92144139CF00380CD5 /* back16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back16.png; sourceTree = "<group>"; };
+		86A88E93144139CF00380CD5 /* back2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back2.png; sourceTree = "<group>"; };
+		86A88E94144139CF00380CD5 /* back3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back3.png; sourceTree = "<group>"; };
+		86A88E95144139CF00380CD5 /* back4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back4.png; sourceTree = "<group>"; };
+		86A88E96144139CF00380CD5 /* back5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back5.png; sourceTree = "<group>"; };
+		86A88E97144139CF00380CD5 /* back6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back6.png; sourceTree = "<group>"; };
+		86A88E98144139CF00380CD5 /* back7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back7.png; sourceTree = "<group>"; };
+		86A88E99144139CF00380CD5 /* back8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back8.png; sourceTree = "<group>"; };
+		86A88E9A144139CF00380CD5 /* back9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back9.png; sourceTree = "<group>"; };
+		86A88E9B144139CF00380CD5 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		86A88E9C144139CF00380CD5 /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear.png; sourceTree = "<group>"; };
+		86A88E9D144139CF00380CD5 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		86A88E9E144139CF00380CD5 /* color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color.png; sourceTree = "<group>"; };
+		86A88E9F144139CF00380CD5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		86A88EA0144139CF00380CD5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		86A88EA1144139CF00380CD5 /* filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filter.png; sourceTree = "<group>"; };
+		86A88EA2144139CF00380CD5 /* head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head.png; sourceTree = "<group>"; };
+		86A88EA3144139CF00380CD5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		86A88EA4144139CF00380CD5 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		86A88EA5144139CF00380CD5 /* pen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pen.png; sourceTree = "<group>"; };
+		86A88EA6144139CF00380CD5 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
+		86A88EA7144139CF00380CD5 /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
+		86A88EA8144139CF00380CD5 /* Select.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Select.caf; sourceTree = "<group>"; };
+		86A88EA9144139CF00380CD5 /* width.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = width.png; sourceTree = "<group>"; };
+		86A88EC9144139FF00380CD5 /* ColorMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMatrix.h; sourceTree = "<group>"; };
+		86A88ECA14413E7800380CD5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86A88E3A1441396D00380CD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86A88ECB14413E7800380CD5 /* AudioToolbox.framework in Frameworks */,
+				86A88E421441396D00380CD5 /* UIKit.framework in Frameworks */,
+				86A88E441441396D00380CD5 /* Foundation.framework in Frameworks */,
+				86A88E461441396D00380CD5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86A88E541441396D00380CD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86A88E5A1441396D00380CD5 /* SenTestingKit.framework in Frameworks */,
+				86A88E5B1441396D00380CD5 /* UIKit.framework in Frameworks */,
+				86A88E5C1441396D00380CD5 /* Foundation.framework in Frameworks */,
+				86A88E5D1441396D00380CD5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86A88E321441396D00380CD5 = {
+			isa = PBXGroup;
+			children = (
+				86A88ECA14413E7800380CD5 /* AudioToolbox.framework */,
+				86A88E471441396D00380CD5 /* Brush */,
+				86A88E401441396D00380CD5 /* Frameworks */,
+				86A88E3E1441396D00380CD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86A88E3E1441396D00380CD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86A88E3D1441396D00380CD5 /* Brush.app */,
+				86A88E581441396D00380CD5 /* BrushTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86A88E401441396D00380CD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86A88E411441396D00380CD5 /* UIKit.framework */,
+				86A88E431441396D00380CD5 /* Foundation.framework */,
+				86A88E451441396D00380CD5 /* CoreGraphics.framework */,
+				86A88E591441396D00380CD5 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86A88E471441396D00380CD5 /* Brush */ = {
+			isa = PBXGroup;
+			children = (
+				86A88E501441396D00380CD5 /* BrushAppDelegate.h */,
+				86A88E511441396D00380CD5 /* BrushAppDelegate.m */,
+				86A88E75144139C400380CD5 /* MainViewController.h */,
+				86A88E76144139C400380CD5 /* MainViewController.m */,
+				86A88E77144139C400380CD5 /* PainterView.h */,
+				86A88E78144139C400380CD5 /* PainterView.m */,
+				86A88E79144139C400380CD5 /* SoundEffect.h */,
+				86A88E7A144139C400380CD5 /* SoundEffect.m */,
+				86A88E71144139C400380CD5 /* FuctionView.h */,
+				86A88E72144139C400380CD5 /* FuctionView.m */,
+				86A88E73144139C400380CD5 /* ImageUtil.h */,
+				86A88E74144139C400380CD5 /* ImageUtil.m */,
+				86A88E7B144139C400380CD5 /* Squiggle.h */,
+				86A88E7C144139C400380CD5 /* Squiggle.m */,
+				86A88E7D144139C400380CD5 /* UIButton+Addition.h */,
+				86A88E7E144139C400380CD5 /* UIButton+Addition.m */,
+				86A88E7F144139C400380CD5 /* UIImage+Addition.h */,
+				86A88E80144139C400380CD5 /* UIImage+Addition.m */,
+				86A88EC9144139FF00380CD5 /* ColorMatrix.h */,
+				86A88E481441396D00380CD5 /* Supporting Files */,
+			);
+			path = Brush;
+			sourceTree = "<group>";
+		};
+		86A88E481441396D00380CD5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86A88E89144139CF00380CD5 /* image */,
+				86A88E491441396D00380CD5 /* Brush-Info.plist */,
+				86A88E4A1441396D00380CD5 /* InfoPlist.strings */,
+				86A88E4D1441396D00380CD5 /* main.m */,
+				86A88E4F1441396D00380CD5 /* Brush-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		86A88E89144139CF00380CD5 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				86A88E8A144139CF00380CD5 /* backImage */,
+				86A88E9B144139CF00380CD5 /* camera.png */,
+				86A88E9C144139CF00380CD5 /* clear.png */,
+				86A88E9D144139CF00380CD5 /* close.png */,
+				86A88E9E144139CF00380CD5 /* color.png */,
+				86A88E9F144139CF00380CD5 /* Default.png */,
+				86A88EA0144139CF00380CD5 /* Default@2x.png */,
+				86A88EA1144139CF00380CD5 /* filter.png */,
+				86A88EA2144139CF00380CD5 /* head.png */,
+				86A88EA3144139CF00380CD5 /* icon.png */,
+				86A88EA4144139CF00380CD5 /* icon@2x.png */,
+				86A88EA5144139CF00380CD5 /* pen.png */,
+				86A88EA6144139CF00380CD5 /* phone.png */,
+				86A88EA7144139CF00380CD5 /* save.png */,
+				86A88EA8144139CF00380CD5 /* Select.caf */,
+				86A88EA9144139CF00380CD5 /* width.png */,
+			);
+			path = image;
+			sourceTree = SOURCE_ROOT;
+		};
+		86A88E8A144139CF00380CD5 /* backImage */ = {
+			isa = PBXGroup;
+			children = (
+				86A88E8B144139CF00380CD5 /* back1.png */,
+				86A88E8C144139CF00380CD5 /* back10.png */,
+				86A88E8D144139CF00380CD5 /* back11.png */,
+				86A88E8E144139CF00380CD5 /* back12.png */,
+				86A88E8F144139CF00380CD5 /* back13.png */,
+				86A88E90144139CF00380CD5 /* back14.png */,
+				86A88E91144139CF00380CD5 /* back15.png */,
+				86A88E92144139CF00380CD5 /* back16.png */,
+				86A88E93144139CF00380CD5 /* back2.png */,
+				86A88E94144139CF00380CD5 /* back3.png */,
+				86A88E95144139CF00380CD5 /* back4.png */,
+				86A88E96144139CF00380CD5 /* back5.png */,
+				86A88E97144139CF00380CD5 /* back6.png */,
+				86A88E98144139CF00380CD5 /* back7.png */,
+				86A88E99144139CF00380CD5 /* back8.png */,
+				86A88E9A144139CF00380CD5 /* back9.png */,
+			);
+			path = backImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86A88E3C1441396D00380CD5 /* Brush */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86A88E6B1441396D00380CD5 /* Build configuration list for PBXNativeTarget "Brush" */;
+			buildPhases = (
+				86A88E391441396D00380CD5 /* Sources */,
+				86A88E3A1441396D00380CD5 /* Frameworks */,
+				86A88E3B1441396D00380CD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Brush;
+			productName = Brush;
+			productReference = 86A88E3D1441396D00380CD5 /* Brush.app */;
+			productType = "com.apple.product-type.application";
+		};
+		86A88E571441396D00380CD5 /* BrushTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86A88E6E1441396D00380CD5 /* Build configuration list for PBXNativeTarget "BrushTests" */;
+			buildPhases = (
+				86A88E531441396D00380CD5 /* Sources */,
+				86A88E541441396D00380CD5 /* Frameworks */,
+				86A88E551441396D00380CD5 /* Resources */,
+				86A88E561441396D00380CD5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86A88E5F1441396D00380CD5 /* PBXTargetDependency */,
+			);
+			name = BrushTests;
+			productName = BrushTests;
+			productReference = 86A88E581441396D00380CD5 /* BrushTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86A88E341441396D00380CD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 86A88E371441396D00380CD5 /* Build configuration list for PBXProject "Brush" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 86A88E321441396D00380CD5;
+			productRefGroup = 86A88E3E1441396D00380CD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86A88E3C1441396D00380CD5 /* Brush */,
+				86A88E571441396D00380CD5 /* BrushTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86A88E3B1441396D00380CD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86A88E4C1441396D00380CD5 /* InfoPlist.strings in Resources */,
+				86A88EAA144139CF00380CD5 /* back1.png in Resources */,
+				86A88EAB144139CF00380CD5 /* back10.png in Resources */,
+				86A88EAC144139CF00380CD5 /* back11.png in Resources */,
+				86A88EAD144139CF00380CD5 /* back12.png in Resources */,
+				86A88EAE144139CF00380CD5 /* back13.png in Resources */,
+				86A88EAF144139CF00380CD5 /* back14.png in Resources */,
+				86A88EB0144139CF00380CD5 /* back15.png in Resources */,
+				86A88EB1144139CF00380CD5 /* back16.png in Resources */,
+				86A88EB2144139CF00380CD5 /* back2.png in Resources */,
+				86A88EB3144139CF00380CD5 /* back3.png in Resources */,
+				86A88EB4144139CF00380CD5 /* back4.png in Resources */,
+				86A88EB5144139CF00380CD5 /* back5.png in Resources */,
+				86A88EB6144139CF00380CD5 /* back6.png in Resources */,
+				86A88EB7144139CF00380CD5 /* back7.png in Resources */,
+				86A88EB8144139CF00380CD5 /* back8.png in Resources */,
+				86A88EB9144139CF00380CD5 /* back9.png in Resources */,
+				86A88EBA144139CF00380CD5 /* camera.png in Resources */,
+				86A88EBB144139CF00380CD5 /* clear.png in Resources */,
+				86A88EBC144139CF00380CD5 /* close.png in Resources */,
+				86A88EBD144139CF00380CD5 /* color.png in Resources */,
+				86A88EBE144139CF00380CD5 /* Default.png in Resources */,
+				86A88EBF144139CF00380CD5 /* Default@2x.png in Resources */,
+				86A88EC0144139CF00380CD5 /* filter.png in Resources */,
+				86A88EC1144139CF00380CD5 /* head.png in Resources */,
+				86A88EC2144139CF00380CD5 /* icon.png in Resources */,
+				86A88EC3144139CF00380CD5 /* icon@2x.png in Resources */,
+				86A88EC4144139CF00380CD5 /* pen.png in Resources */,
+				86A88EC5144139D000380CD5 /* phone.png in Resources */,
+				86A88EC6144139D000380CD5 /* save.png in Resources */,
+				86A88EC7144139D000380CD5 /* Select.caf in Resources */,
+				86A88EC8144139D000380CD5 /* width.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86A88E551441396D00380CD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86A88E561441396D00380CD5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86A88E391441396D00380CD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86A88E4E1441396D00380CD5 /* main.m in Sources */,
+				86A88E521441396D00380CD5 /* BrushAppDelegate.m in Sources */,
+				86A88E81144139C400380CD5 /* FuctionView.m in Sources */,
+				86A88E82144139C400380CD5 /* ImageUtil.m in Sources */,
+				86A88E83144139C400380CD5 /* MainViewController.m in Sources */,
+				86A88E84144139C400380CD5 /* PainterView.m in Sources */,
+				86A88E85144139C400380CD5 /* SoundEffect.m in Sources */,
+				86A88E86144139C400380CD5 /* Squiggle.m in Sources */,
+				86A88E87144139C400380CD5 /* UIButton+Addition.m in Sources */,
+				86A88E88144139C400380CD5 /* UIImage+Addition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86A88E531441396D00380CD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86A88E5F1441396D00380CD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86A88E3C1441396D00380CD5 /* Brush */;
+			targetProxy = 86A88E5E1441396D00380CD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		86A88E4A1441396D00380CD5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86A88E4B1441396D00380CD5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86A88E691441396D00380CD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		86A88E6A1441396D00380CD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86A88E6C1441396D00380CD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Brush/Brush-Prefix.pch";
+				INFOPLIST_FILE = "Brush/Brush-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		86A88E6D1441396D00380CD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Brush/Brush-Prefix.pch";
+				INFOPLIST_FILE = "Brush/Brush-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		86A88E6F1441396D00380CD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Brush.app/Brush";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Brush/Brush-Prefix.pch";
+				INFOPLIST_FILE = "BrushTests/BrushTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		86A88E701441396D00380CD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Brush.app/Brush";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Brush/Brush-Prefix.pch";
+				INFOPLIST_FILE = "BrushTests/BrushTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86A88E371441396D00380CD5 /* Build configuration list for PBXProject "Brush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86A88E691441396D00380CD5 /* Debug */,
+				86A88E6A1441396D00380CD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86A88E6B1441396D00380CD5 /* Build configuration list for PBXNativeTarget "Brush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86A88E6C1441396D00380CD5 /* Debug */,
+				86A88E6D1441396D00380CD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		86A88E6E1441396D00380CD5 /* Build configuration list for PBXNativeTarget "BrushTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86A88E6F1441396D00380CD5 /* Debug */,
+				86A88E701441396D00380CD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86A88E341441396D00380CD5 /* Project object */;
+}

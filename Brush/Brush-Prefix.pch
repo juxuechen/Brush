@@ -1,0 +1,22 @@
+//
+// Prefix header for all source files of the 'Brush' target in the 'Brush' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+	#import <UIKit/UIKit.h>
+	#import <Foundation/Foundation.h>
+#define ColorView  100
+#define WidthView  200
+#define FilterView 300
+#define BackImageView 400
+#define CloseButton 500
+
+#define BackgroundColor [UIColor colorWithRed:253.0f/255.0f green:172.0f/255.0f blue:246.0f/255.0f alpha:1]
+
+#endif
