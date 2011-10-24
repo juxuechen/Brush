@@ -9,9 +9,9 @@
 #import "Squiggle.h"
 
 @interface PainterView : UIView {
-	//正在绘的曲线
+//正在绘的曲线
 	NSMutableDictionary *squigglesDic;
-	//已经完成的曲线
+//已经完成的曲线
 	NSMutableArray *finishSquiggles;
     
 	UIColor *color;
